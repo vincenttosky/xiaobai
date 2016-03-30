@@ -2307,3 +2307,66 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1459265927.7007
     'REQUEST_TIME' => 1459265927
 ]
+2016-03-30 20:20:27 [127.0.0.1][1][-][error][yii\base\ErrorException:2] exception 'yii\base\ErrorException' with message 'urlencode() expects parameter 1 to be string, array given' in /private/var/www/xiaobai/backend/controllers/SourceController.php:179
+Stack trace:
+#0 [internal function]: yii\base\ErrorHandler->handleError(2, 'urlencode() exp...', '/private/var/ww...', 179, Array)
+#1 /private/var/www/xiaobai/backend/controllers/SourceController.php(179): urlencode(Array)
+#2 [internal function]: backend\controllers\SourceController->actionGet('2')
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('get', Array)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('source/get', Array)
+#7 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-03-30 20:20:27 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '2'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/source/get/2'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '62358'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459340427.6423
+    'REQUEST_TIME' => 1459340427
+]
