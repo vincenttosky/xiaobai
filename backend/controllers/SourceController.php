@@ -30,6 +30,11 @@ class SourceController extends Controller
                 'class' => AccessControl::className(),
                 'rules' => [
                     [
+                        'actions' => ['get', ],
+                        'allow' => true,
+                        'roles' => ['?']
+                    ],
+                    [
                         'allow' => true,
                         'roles' => ['@']
                     ]
