@@ -176,7 +176,7 @@ class SourceController extends Controller
             $after = Software::findIdentities($after_ids);
             $ret['after'] = ArrayHelper::toArray($after);
 
-            echo json_encode($ret, JSON_UNESCAPED_UNICODE);
+            echo base64_encode(json_encode($ret, JSON_UNESCAPED_UNICODE));
         }
     }
 
