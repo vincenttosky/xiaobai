@@ -6,6 +6,12 @@ server {
 	root /var/www/xiaobai/backend/web;
 	index index.php;
 
+	access_log  /usr/local/etc/nginx/logs/xiaobai.access.log;
+	error_log  /usr/local/etc/nginx/logs/xiaobai.error.log;
+	
+	client_body_temp_path      /var/www/xiaobai/client_body_temp;
+	client_max_body_size 20M;
+
 	location / {
 		try_files $uri $uri/ /index.php?$args;
 	}

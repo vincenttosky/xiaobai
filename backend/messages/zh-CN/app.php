@@ -100,6 +100,12 @@ return [
     'After3' => '最后软件3',
     'Game' => '游戏',
 
+    'Upload File' => '上传文件',
+    'Upload' => '上传',
+    'Type' => '文件类型',
+    'URL' => '链接',
+    'Note' => '备注',
+
 
 
 

@@ -2,44 +2,37 @@
 
 use yii\helpers\Html;
 use yii\grid\GridView;
-use backend\models\Software;
+use backend\models\Upload;
 use yii\helpers\ArrayHelper;
 
 /* @var $this yii\web\View */
-/* @var $searchModel backend\models\UserSearch */
+/* @var $searchModel backend\models\UploadSearch */
 /* @var $dataProvider yii\data\ActiveDataProvider */
 
-$this->title = Yii::t('app', 'Softwares');
+$this->title = Yii::t('app', 'Upload');
 $this->params['breadcrumbs'][] = $this->title;
 ?>
-<div class="software-index">
+<div class="upload-index">
 
     <?php // echo $this->render('_search', ['model' => $searchModel]); ?>
 
     <p>
-        <?= Html::a(Yii::t('app', 'Create ') . Yii::t('app', 'Softwares'), ['create'], ['class' => 'btn btn-success']) ?>
+        <?= Html::a(Yii::t('app', 'Create ') . Yii::t('app', 'Upload'), ['create'], ['class' => 'btn btn-success']) ?>
     </p>
 
     <?= GridView::widget([
         'dataProvider' => $dataProvider,
         'filterModel' => $searchModel,
         'columns' => [
-
             'id',
             [
-                'attribute' => 'soft_type',
+                'attribute' => 'type',
                 'value' => function($model) {
-                    return $model->getSoftTypeName();
+                    return $model->getUploadTypeName();
                 },
             ],
-            'download_url',
-            'img_url', 
-            'title', 
-            'desc',  
-            'size', 
-            'renqi', 
-            'language', 
-            'level',
+            'url',
+            'note', 
             'created_at',
             'updated_at',
             'create_user_id',

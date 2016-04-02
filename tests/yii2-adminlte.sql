@@ -170,3 +170,20 @@ CREATE TABLE `source` (
 
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+/*Table structure for table `source` */
+
+DROP TABLE IF EXISTS `upload`;
+
+CREATE TABLE `upload` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `type` int(3) DEFAULT 0,
+  `url` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `note` varchar(255) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  `updated_at` datetime NOT NULL,
+  `create_user_id` int(11) NOT NULL,
+  `update_user_id` int(11) NOT NULL,
+
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

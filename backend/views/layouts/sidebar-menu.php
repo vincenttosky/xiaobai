@@ -65,6 +65,11 @@ echo Menu::widget(
                 'url' => ['/source/index'],
                 'icon' => 'fa-dashboard',
             ],
+            [
+                'label' => Yii::t('app', 'Upload'),
+                'url' => ['/upload/index'],
+                'icon' => 'fa-dashboard',
+            ],
         ]
     ]
 );
