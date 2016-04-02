@@ -106,6 +106,13 @@ return [
     'URL' => '链接',
     'Note' => '备注',
 
+    'Stat' => '统计',
+    'Mac' => 'Mac地址',
+    'Channel' => '渠道',
+    'Version' => '版本',
+    'Oper' => '操作',
+    'Bdict' => '额外数据',
+
 
 
 

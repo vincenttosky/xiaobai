@@ -144,7 +144,7 @@ CREATE TABLE `software` (
 
   PRIMARY KEY (`id`),
   INDEX  index1_softtype ( soft_type )
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Table structure for table `source` */
 
@@ -169,7 +169,7 @@ CREATE TABLE `source` (
   `update_user_id` int(11) NOT NULL,
 
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 /*Table structure for table `source` */
 
@@ -186,4 +186,18 @@ CREATE TABLE `upload` (
   `update_user_id` int(11) NOT NULL,
 
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+DROP TABLE IF EXISTS `stat`;
+
+CREATE TABLE `stat` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `mac` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `channel` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `version` varchar(20) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `oper` varchar(32) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `bdict` varchar(64) COLLATE utf8_unicode_ci DEFAULT NULL,
+  `created_at` datetime NOT NULL,
+  
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=1 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;

@@ -3425,3 +3425,515 @@ $_SERVER = [
     'REQUEST_TIME_FLOAT' => 1459592187.8697
     'REQUEST_TIME' => 1459592187
 ]
+2016-04-02 21:29:11 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'backend\controllers\StatController' in file: /private/var/www/xiaobai/backend/controllers/StatController.php. Namespace missing?' in /private/var/www/xiaobai/vendor/yiisoft/yii2/BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('backend\\control...')
+#1 [internal function]: spl_autoload_call('backend\\control...')
+#2 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(563): class_exists('backend\\control...')
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(521): yii\base\Module->createControllerByID('stat')
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(449): yii\base\Module->createController('stat/index')
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/index', Array)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#8 {main}
+2016-04-02 21:29:11 [127.0.0.1][-][-][info][application] $_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64526'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/upload/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459603751.6504
+    'REQUEST_TIME' => 1459603751
+]
+2016-04-02 21:30:15 [127.0.0.1][1][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'The view file does not exist: /private/var/www/xiaobai/backend/views/stat/index.php' in /private/var/www/xiaobai/vendor/yiisoft/yii2/base/View.php:226
+Stack trace:
+#0 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(backend\controllers\StatController))
+#1 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\StatController))
+#2 /private/var/www/xiaobai/backend/controllers/StatController.php(51): yii\base\Controller->render('index', Array)
+#3 [internal function]: backend\controllers\StatController->actionIndex()
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#7 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/index', Array)
+#8 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-04-02 21:30:15 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64526'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/upload/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459603815.635
+    'REQUEST_TIME' => 1459603815
+]
+2016-04-02 21:31:54 [127.0.0.1][1][-][error][yii\base\UnknownPropertyException] exception 'yii\base\UnknownPropertyException' with message 'Getting unknown property: backend\models\Software::mac' in /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Component.php:143
+Stack trace:
+#0 /private/var/www/xiaobai/vendor/yiisoft/yii2/db/BaseActiveRecord.php(246): yii\base\Component->__get('mac')
+#1 /private/var/www/xiaobai/vendor/yiisoft/yii2/helpers/BaseArrayHelper.php(190): yii\db\BaseActiveRecord->__get('mac')
+#2 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/DataColumn.php(182): yii\helpers\BaseArrayHelper::getValue(Object(backend\models\Software), 'mac')
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/DataColumn.php(193): yii\grid\DataColumn->getDataCellValue(Object(backend\models\Software), 2, 0)
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/Column.php(104): yii\grid\DataColumn->renderDataCellContent(Object(backend\models\Software), 2, 0)
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/GridView.php(455): yii\grid\Column->renderDataCell(Object(backend\models\Software), 2, 0)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/GridView.php(424): yii\grid\GridView->renderTableRow(Object(backend\models\Software), 2, 0)
+#7 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/GridView.php(295): yii\grid\GridView->renderTableBody()
+#8 /private/var/www/xiaobai/vendor/yiisoft/yii2/widgets/BaseListView.php(140): yii\grid\GridView->renderItems()
+#9 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/GridView.php(264): yii\widgets\BaseListView->renderSection('{items}')
+#10 /private/var/www/xiaobai/vendor/yiisoft/yii2/widgets/BaseListView.php(117): yii\grid\GridView->renderSection('{items}')
+#11 [internal function]: yii\widgets\BaseListView->yii\widgets\{closure}(Array)
+#12 /private/var/www/xiaobai/vendor/yiisoft/yii2/widgets/BaseListView.php(120): preg_replace_callback('/{\\w+}/', Object(Closure), '{summary}\n{item...')
+#13 /private/var/www/xiaobai/vendor/yiisoft/yii2/grid/GridView.php(239): yii\widgets\BaseListView->run()
+#14 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Widget.php(96): yii\grid\GridView->run()
+#15 /private/var/www/xiaobai/backend/views/stat/index.php(38): yii\base\Widget::widget(Array)
+#16 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/View.php(325): require('/private/var/ww...')
+#17 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/View.php(247): yii\base\View->renderPhpFile('/private/var/ww...', Array)
+#18 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/View.php(149): yii\base\View->renderFile('/private/var/ww...', Array, Object(backend\controllers\StatController))
+#19 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(367): yii\base\View->render('index', Array, Object(backend\controllers\StatController))
+#20 /private/var/www/xiaobai/backend/controllers/StatController.php(51): yii\base\Controller->render('index', Array)
+#21 [internal function]: backend\controllers\StatController->actionIndex()
+#22 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#23 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#24 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('index', Array)
+#25 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/index', Array)
+#26 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#27 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#28 {main}
+2016-04-02 21:31:54 [127.0.0.1][1][-][info][application] $_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/index'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '64566'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/upload/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459603914.3342
+    'REQUEST_TIME' => 1459603914
+]
+2016-04-02 22:16:02 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message '缺少参数：channel, version, oper, bdict' in /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('post', Array)
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/post', Array)
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2016-04-02 22:16:01 [127.0.0.1][1][-][info][application] $_GET = [
+    'mac' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => 'mac=1'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/post?mac=1'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65102'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459606561.9865
+    'REQUEST_TIME' => 1459606561
+]
+2016-04-02 22:22:48 [127.0.0.1][1][-][error][yii\web\HttpException:400] exception 'yii\web\BadRequestHttpException' with message '缺少参数：channel, version, oper, bdict' in /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Controller.php:93
+Stack trace:
+#0 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(49): yii\web\Controller->bindActionParams(Object(yii\base\InlineAction), Array)
+#1 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#2 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('post', Array)
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/post', Array)
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#5 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#6 {main}
+2016-04-02 22:22:48 [127.0.0.1][1][-][info][application] $_GET = [
+    'mac' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => 'mac=1'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/post?mac=1'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65234'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459606968.562
+    'REQUEST_TIME' => 1459606968
+]
+2016-04-02 22:23:18 [127.0.0.1][1][-][error][yii\base\InvalidParamException] exception 'yii\base\InvalidParamException' with message 'Unknown scenario: default' in /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Model.php:325
+Stack trace:
+#0 /private/var/www/xiaobai/vendor/yiisoft/yii2/db/ActiveRecord.php(408): yii\base\Model->validate(NULL)
+#1 /private/var/www/xiaobai/vendor/yiisoft/yii2/db/BaseActiveRecord.php(582): yii\db\ActiveRecord->insert(true, NULL)
+#2 /private/var/www/xiaobai/backend/controllers/StatController.php(110): yii\db\BaseActiveRecord->save()
+#3 [internal function]: backend\controllers\StatController->actionPost('1', '1', '1.0', 'open', 'test')
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('post', Array)
+#7 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/post', Array)
+#8 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#9 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#10 {main}
+2016-04-02 22:23:17 [127.0.0.1][1][-][info][application] $_GET = [
+    'mac' => '1'
+    'channel' => '1'
+    'version' => '1.0'
+    'oper' => 'open'
+    'bdict' => 'test'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => '11ddt28u9i7cgibfeqtk23gg91'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => 'mac=1&channel=1&version=1.0&oper=open&bdict=test'
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/post?mac=1&channel=1&version=1.0&oper=open&bdict=test'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65234'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=11ddt28u9i7cgibfeqtk23gg91; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459606997.994
+    'REQUEST_TIME' => 1459606997
+]
+2016-04-02 22:25:34 [127.0.0.1][1][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\controllers\StatController::findModel()' in /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Component.php:282
+Stack trace:
+#0 /private/var/www/xiaobai/backend/controllers/StatController.php(67): yii\base\Component->__call('findModel', Array)
+#1 /private/var/www/xiaobai/backend/controllers/StatController.php(67): backend\controllers\StatController->findModel('1')
+#2 [internal function]: backend\controllers\StatController->actionView('1')
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('view', Array)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/view', Array)
+#7 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-02 22:25:34 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => 'ooomsara3lcs51ql39vi6dfkc6'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'GET'
+    'CONTENT_TYPE' => ''
+    'CONTENT_LENGTH' => ''
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/1'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65278'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_REFERER' => 'http://localhost:8080/stat/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate, sdch'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=ooomsara3lcs51ql39vi6dfkc6; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459607134.3063
+    'REQUEST_TIME' => 1459607134
+]
+2016-04-02 22:25:44 [127.0.0.1][1][-][error][yii\base\UnknownMethodException] exception 'yii\base\UnknownMethodException' with message 'Calling unknown method: backend\controllers\StatController::findModel()' in /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Component.php:282
+Stack trace:
+#0 /private/var/www/xiaobai/backend/controllers/StatController.php(102): yii\base\Component->__call('findModel', Array)
+#1 /private/var/www/xiaobai/backend/controllers/StatController.php(102): backend\controllers\StatController->findModel('1')
+#2 [internal function]: backend\controllers\StatController->actionDelete('1')
+#3 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/InlineAction.php(55): call_user_func_array(Array, Array)
+#4 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Controller.php(151): yii\base\InlineAction->runWithParams(Array)
+#5 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Module.php(455): yii\base\Controller->runAction('delete', Array)
+#6 /private/var/www/xiaobai/vendor/yiisoft/yii2/web/Application.php(83): yii\base\Module->runAction('stat/delete', Array)
+#7 /private/var/www/xiaobai/vendor/yiisoft/yii2/base/Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#8 /private/var/www/xiaobai/backend/web/index.php(18): yii\base\Application->run()
+#9 {main}
+2016-04-02 22:25:44 [127.0.0.1][1][-][info][application] $_GET = [
+    'id' => '1'
+]
+
+$_POST = [
+    '_csrf' => 'S0FLcEFzWS16IngkNypgVA4AHSA2MWl1GzERIhsEHAAhdz4bMCQJQw=='
+]
+
+$_COOKIE = [
+    '_csrf' => '2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s:32:\"1c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn\";'
+    'PHPSESSID' => 'ooomsara3lcs51ql39vi6dfkc6'
+    '_identity' => 'c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as:14:\"[1,\"\",2592000]\";'
+]
+
+$_SESSION = [
+    '__flash' => []
+    '__returnUrl' => '/'
+    '__id' => 1
+]
+
+$_SERVER = [
+    'USER' => 'weiwei'
+    'HOME' => '/Users/weiwei'
+    'FCGI_ROLE' => 'RESPONDER'
+    'SCRIPT_FILENAME' => '/var/www/xiaobai/backend/web//index.php'
+    'QUERY_STRING' => ''
+    'REQUEST_METHOD' => 'POST'
+    'CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'CONTENT_LENGTH' => '66'
+    'SCRIPT_NAME' => '/index.php'
+    'REQUEST_URI' => '/stat/delete/1'
+    'DOCUMENT_URI' => '/index.php'
+    'DOCUMENT_ROOT' => '/var/www/xiaobai/backend/web'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'SERVER_SOFTWARE' => 'nginx/1.8.0'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'REMOTE_PORT' => '65278'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '8080'
+    'SERVER_NAME' => 'localhost'
+    'REDIRECT_STATUS' => '200'
+    'HTTP_HOST' => 'localhost:8080'
+    'HTTP_CONNECTION' => 'keep-alive'
+    'HTTP_CONTENT_LENGTH' => '66'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    'HTTP_ORIGIN' => 'http://localhost:8080'
+    'HTTP_UPGRADE_INSECURE_REQUESTS' => '1'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_5) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2593.0 Safari/537.36'
+    'HTTP_CONTENT_TYPE' => 'application/x-www-form-urlencoded'
+    'HTTP_REFERER' => 'http://localhost:8080/stat/index'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.6,en;q=0.4'
+    'HTTP_COOKIE' => '_csrf=2c290519648900c74fe132c1a15965d58ebb3fcd7026fc79668b60a2f39041c2s%3A32%3A%221c3TvY9yEAVPwB0XPpZRZwE-j6ukqWPn%22%3B; PHPSESSID=ooomsara3lcs51ql39vi6dfkc6; _identity=c0425aec17e247d930749c99efd155ae69a67468bed3b187bf186600a5276c8as%3A14%3A%22%5B1%2C%22%22%2C2592000%5D%22%3B'
+    'PHP_SELF' => '/index.php'
+    'REQUEST_TIME_FLOAT' => 1459607144.0286
+    'REQUEST_TIME' => 1459607144
+]
