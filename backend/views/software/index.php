@@ -32,8 +32,14 @@ $this->params['breadcrumbs'][] = $this->title;
                     return $model->getSoftTypeName();
                 },
             ],
-            'download_url',
-            'img_url', 
+            [
+                'attribute' => 'download_url',
+                'contentOptions' => ['style' => 'max-width: 80px; word-break: break-all;']
+            ],
+            [
+                'attribute' => 'img_url',
+                'contentOptions' => ['style' => 'max-width: 80px; word-break: break-all;']
+            ],
             'title', 
             'desc',  
             'size', 
